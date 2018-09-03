@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://tickapp.cnc9veov03sg.us-east-2.rds.amazonaws.com/tickapp
+    username: tickapp_aws
+    password: tickapp_aws
+
+server:
+   port: 8080
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://tick-app-eureka.herokuapp.com/eureka #http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    nonSecurePort: 8080
